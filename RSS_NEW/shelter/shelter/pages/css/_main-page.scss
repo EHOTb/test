@@ -1,0 +1,119 @@
+$fontGeo: 'Georgia',
+sans-serif;
+$fontArial: Arial,
+"Helvetica Neue",
+Helvetica,
+sans-serif;
+body {
+    font-family: $fontGeo;
+    box-sizing: border-box;
+}
+
+.wrapper_global {
+    width: 1280px;
+    border: 2px solid black;
+}
+
+.wrapper__main {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+    width: 100%;
+}
+
+.header li {
+    list-style-type: none;
+}
+
+.page__1 {
+    height: 908px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper__header {
+    width: 1280px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.page__1 {}
+
+.nav li a {
+    text-decoration: none;
+    color: #CDCDCD;
+    padding-left: 35px;
+}
+
+.cozy {
+    color: #F1CDB3;
+    font-size: 32px;
+    padding-top: 60px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.sfp {
+    color: #fff;
+    font-family: $fontArial margin: 10px 0 0 4px;
+}
+
+.nav {
+    font-family: $fontArial;
+    font-size: 15px;
+    color: #CDCDCD;
+    margin-bottom: 0;
+    margin-top: 76px;
+    font-weight: 400;
+}
+
+.main__content {
+    display: flex;
+}
+
+.main__image {
+    padding-top: 56px;
+    width: 698px;
+    height: 728px;
+}
+
+.main__content__header {
+    margin-top: 223px;
+    font-size: 44px;
+    color: #fff;
+    font-weight: 400;
+    width: 310px;
+    padding-left: 3px;
+}
+
+.main__content__text {
+    padding-top: 42px;
+    font-family: $fontArial;
+    font-size: 15px;
+    color: #CDCDCD;
+    width: 93%;
+}
+
+.main__height {
+    line-height: 160%;
+}
+
+.main__content__button {
+    padding: 15px 0 15px 45px;
+    margin-top: 57px;
+    border-radius: 100px;
+    max-width: 162px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: $fontGeo;
+    color: #292929;
+    background-color: #F1CDB3;
+    letter-spacing: 0.05em;
+}
