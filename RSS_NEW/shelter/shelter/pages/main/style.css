@@ -114,3 +114,12 @@ body {
     background-color: #F1CDB3;
     letter-spacing: 0.05em;
 }
+
+.wrapper {
+    width: 1200px;
+}
+
+.page__2 {
+    width: 1280px;
+    height: 908px;
+}
