@@ -7,7 +7,6 @@ body {
 
 .wrapper_global {
   width: 1280px;
-  border: 2px solid black;
 }
 
 .wrapper__main {
@@ -27,7 +26,6 @@ body {
 
 .wrapper__header {
   width: 1280px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -54,16 +52,30 @@ body {
 
 .cozy {
   color: #F1CDB3;
-  font-size: 32px;
-  padding-top: 60px;
+  padding-top: 59px;
+  padding-left: 1px;
   margin: 0;
   font-weight: 400;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 6%;
+  font-size: 32px;
+  max-width: 200px;
+  letter-spacing: 0.062em;
+  margin-left: -3px;
 }
 
 .sfp {
   color: #fff;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 10px 0 0 4px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 10%;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  margin-left: 2px;
 }
 
 .nav {
@@ -73,6 +85,16 @@ body {
   margin-bottom: 0;
   margin-top: 76px;
   font-weight: 400;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+.nav1 {
+  padding-right: 3px;
+}
+
+.nav2 {
+  padding-right: -3px;
 }
 
 .main__content {
@@ -82,26 +104,41 @@ body {
 }
 
 .main__image {
-  padding-top: 56px;
+  padding-top: 60px;
   width: 698px;
   height: 728px;
 }
 
 .main__content__header {
-  margin-top: 223px;
+  margin-top: 225px;
   font-size: 44px;
   color: #fff;
   font-weight: 400;
   width: 310px;
   padding-left: 3px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  margin-left: -5px;
 }
 
 .main__content__text {
-  padding-top: 42px;
+  padding-top: 0;
+  margin-left: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   color: #CDCDCD;
   width: 93%;
+}
+
+.cozy__text {
+  padding-top: 41px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  margin-left: -1px;
 }
 
 .main__height {
@@ -109,21 +146,21 @@ body {
 }
 
 .main__content__button {
-  padding: 15px 0 15px 45px;
-  margin-top: 57px;
+  padding: 17px 0 17px 45px;
+  margin-top: 42px;
+  margin-left: -2px;
   border-radius: 100px;
-  max-width: 162px;
+  max-width: 207px;
   font-size: 17px;
   font-weight: 400;
   font-family: "Georgia", sans-serif;
   color: #292929;
   background-color: #F1CDB3;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .wrapper__page2 {
   width: 1280px;
-  border: 1px solid red;
 }
 
 .page__2 {
@@ -138,7 +175,7 @@ body {
 .img__page2 {
   width: 300px;
   height: 408px;
-  margin-left: 215px;
+  margin-left: 175px;
   margin-top: 80px;
 }
 
@@ -156,6 +193,12 @@ body {
   color: #545454;
   font-size: 35px;
   font-family: "Georgia", sans-serif;
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 6%;
+  padding-top: 1px;
 }
 
 .page2__text {
@@ -182,7 +225,6 @@ body {
 .wrapper__ourFriends {
   width: 100%;
   height: 877px;
-  border: 1px solid green;
   background-color: #F6F6F6;
 }
 
@@ -213,7 +255,7 @@ body {
   font-size: 35px;
   font-weight: 400;
   font-family: "Georgia", sans-serif;
-  padding-top: 89px;
+  padding-top: 80px;
   max-width: 400px;
   margin-left: 400px;
   display: -webkit-box;
@@ -222,6 +264,12 @@ body {
   padding-bottom: 60px;
   text-align: center;
   line-height: 130%;
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .ourFriends__arrow {
@@ -257,10 +305,11 @@ body {
   font-size: 20px;
   text-align: center;
   color: #545454;
+  letter-spacing: 0.06em;
 }
 
 .ourFriends__button {
-  margin-top: 30px;
+  margin-top: 33px;
   color: #292929;
   text-align: center;
   border: 2px solid #F1CDB3;
@@ -269,10 +318,11 @@ body {
   vertical-align: middle;
   border-radius: 100px;
   font-size: 17px;
-  padding: 15px 0 15px;
+  padding: 17px 0 15px;
   font-family: "Georgia", sans-serif;
   max-width: 187px;
   margin-left: 41.5px;
+  letter-spacing: 0.06em;
 }
 
 .ourFriends__animals .name {
@@ -287,9 +337,13 @@ body {
   background-color: #FAFAFA;
 }
 
+.ourFriends__animals__bg {
+  padding-bottom: 30px;
+}
+
 .ourFriends__footer {
-  padding: 15px 0 15px 45px;
-  margin-top: 57px;
+  padding: 17px 0 17px 0px;
+  margin-top: 60px;
   border-radius: 100px;
   max-width: 261px;
   font-size: 17px;
@@ -297,8 +351,9 @@ body {
   font-family: "Georgia", sans-serif;
   color: #292929;
   background-color: #F1CDB3;
-  letter-spacing: 0.05em;
-  margin-left: 470px;
+  letter-spacing: 0.06em;
+  margin-left: 509px;
+  text-align: center;
 }
 
 .HowYouCan {
@@ -306,7 +361,7 @@ body {
 }
 
 .HowYouCan__header {
-  margin-left: 486px;
+  margin-left: 485px;
   padding-bottom: 60px;
   text-align: center;
   line-height: 130%;
@@ -314,17 +369,26 @@ body {
   font-size: 35px;
   font-weight: 400;
   font-family: "Georgia", sans-serif;
-  padding-top: 71px;
-  max-width: 308px;
+  padding-top: 78px;
+  max-width: 310px;
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .HowYouCan__icons__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 113px;
+  max-width: 1028px;
+  margin-left: 125px;
 }
 
 .HowYouCan__icons__top div {
@@ -354,12 +418,18 @@ body {
   max-height: 60px;
 }
 
-.text {
+.HowYouCan__text {
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-size: 20px;
+  letter-spacing: 0.06em;
 }
 
 .HowYouCan__icons {
@@ -372,10 +442,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 55px;
   height: 113px;
-  padding-top: 55px;
+  max-width: 860px;
+  margin-left: 209px;
 }
 
 .HowYouCan__icons__bot div {
@@ -405,7 +478,7 @@ body {
   max-height: 60px;
 }
 
-.wrapper__howYouCan {
+.wrapper__youCan {
   max-width: 1280px;
   height: 462px;
   background-color: #F6F6F6;
@@ -428,6 +501,12 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 20px;
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .howYouCan {
@@ -437,14 +516,21 @@ body {
 }
 
 .howYouCan__paydog {
-  padding-top: 91px;
-  margin-left: 163px;
+  padding-top: 92px;
+  margin-left: 143px;
 }
 
 .howYouCan__subheader {
   font-size: 15px;
   color: #545454;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 15px;
+  letter-spacing: 6%;
+  letter-spacing: 0.06em;
+  margin-left: -1px;
 }
 
 .howYouCan__card {
@@ -454,8 +540,13 @@ body {
   background-color: #F1CDB3;
   max-width: 349px;
   border-radius: 9px;
-  margin: 10px 15px 10px 0;
   font-size: 20px;
+}
+
+.howYouCan__card__num {
+  padding: 11px 0px 10px 0;
+  color: #545454;
+  letter-spacing: 0.06em;
 }
 
 .howYouCan__cardIcon {
@@ -469,6 +560,7 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-style: italic;
   font-size: 12px;
+  line-height: 150%;
 }
 
 .howYouCan__content {
@@ -488,6 +580,7 @@ body {
           justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
+  height: 350px;
 }
 
 .footer__info {
@@ -496,63 +589,122 @@ body {
   display: flex;
 }
 
-.footer__left {
-  padding-top: 56px;
-  margin-right: 160px;
-}
-
-.footer__left h3 {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 400;
-}
-
-.footer__left div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  padding-top: 40px;
-  color: #F1CDB3;
-}
-
-.footer__left div img {
-  margin-right: 20px;
-}
-
-.footer__left h3 {
-  max-width: 278px;
-}
-
+.footer__left,
 .footer__rigth {
   padding-top: 56px;
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
+.footer__left h3,
 .footer__rigth h3 {
   color: #fff;
   font-size: 35px;
   font-weight: 400;
 }
 
+.footer__left div,
 .footer__rigth div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
-  padding-top: 40px;
   color: #F1CDB3;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-size: 20px;
 }
 
+.footer__left div img,
 .footer__rigth div img {
   margin-right: 20px;
 }
 
-.footer__rigth h3 {
-  max-width: 271px;
+.footer__left__header {
+  width: 285px;
 }
 
-.footer__rigth p {
-  margin-top: 3px;
+.footer__rigth__header {
+  width: 285px;
+}
+
+.footer__rigth {
+  margin-left: 155px;
+}
+
+.footer__left__mail > img {
+  padding-top: 42px;
+}
+
+.footer__left__mail > p {
+  padding-top: 44px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+.footer__left__phone > img {
+  padding-top: 44px;
+}
+
+.footer__left__phone > p {
+  padding-top: 48px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+.footer__rigth__gps1 {
+  padding-top: 34px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+.footer__rigth__gps1 img {
+  margin-top: -3px;
+  margin-left: -1px;
+}
+
+.footer__rigth__gps1 p {
+  max-width: 260px;
+}
+
+.footer__rigth__gps2 {
+  padding-top: 31px;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+.footer__rigth__gps2 p {
+  padding-top: 5px;
+}
+
+.footer__rigth__gps2 img {
+  margin-top: 1px;
+  margin-left: -1px;
+}
+
+.footer__img {
+  margin-top: 40px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

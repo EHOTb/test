@@ -1,9 +1,4 @@
-$fontGeo: 'Georgia',
-sans-serif;
-$fontArial: Arial,
-"Helvetica Neue",
-Helvetica,
-sans-serif;
+@import './var';
 body {
     font-family: $fontGeo;
     box-sizing: border-box;
@@ -11,7 +6,7 @@ body {
 
 .wrapper_global {
     width: 1280px;
-    border: 2px solid black;
+    // border: 2px solid black;
 }
 
 .wrapper__main {
@@ -31,7 +26,7 @@ body {
 
 .wrapper__header {
     width: 1280px;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0 auto;
 }
 
@@ -53,17 +48,24 @@ body {
 }
 
 .cozy {
-    color: #F1CDB3;
-    font-size: 32px;
-    padding-top: 60px;
+    color: $color-primary;
+    padding-top: 59px;
+    padding-left: 1px;
     margin: 0;
     font-weight: 400;
+    @include logo_title;
+    max-width: 200px;
+    letter-spacing: 0.062em;
+    margin-left: -3px;
 }
 
 .sfp {
     color: #fff;
     font-family: $fontArial;
     margin: 10px 0 0 4px;
+    @include logo_subtitle;
+    letter-spacing: 0.1em;
+    margin-left: 2px;
 }
 
 .nav {
@@ -73,6 +75,16 @@ body {
     margin-bottom: 0;
     margin-top: 76px;
     font-weight: 400;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+
+.nav1 {
+    padding-right: 3px;
+}
+
+.nav2 {
+    padding-right: -3px;
 }
 
 .main__content {
@@ -80,26 +92,35 @@ body {
 }
 
 .main__image {
-    padding-top: 56px;
+    padding-top: 60px;
     width: 698px;
     height: 728px;
 }
 
 .main__content__header {
-    margin-top: 223px;
+    margin-top: 225px;
     font-size: 44px;
     color: #fff;
     font-weight: 400;
     width: 310px;
     padding-left: 3px;
+    @include h2;
+    margin-left: -5px;
 }
 
 .main__content__text {
-    padding-top: 42px;
+    padding-top: 0;
+    margin-left: 0;
     font-family: $fontArial;
     font-size: 15px;
     color: #CDCDCD;
     width: 93%;
+}
+
+.cozy__text {
+    padding-top: 41px;
+    @include paragraph-l;
+    margin-left: -1px;
 }
 
 .main__height {
@@ -107,21 +128,22 @@ body {
 }
 
 .main__content__button {
-    padding: 15px 0 15px 45px;
-    margin-top: 57px;
+    padding: 17px 0 17px 45px;
+    margin-top: 42px;
+    margin-left: -2px;
     border-radius: 100px;
-    max-width: 162px;
+    max-width: 207px;
     font-size: 17px;
     font-weight: 400;
     font-family: $fontGeo;
     color: #292929;
     background-color: #F1CDB3;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
 }
 
 .wrapper__page2 {
     width: 1280px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .page__2 {
@@ -134,7 +156,7 @@ body {
 .img__page2 {
     width: 300px;
     height: 408px;
-    margin-left: 215px;
+    margin-left: 175px;
     margin-top: 80px;
 }
 
@@ -152,6 +174,8 @@ body {
     color: #545454;
     font-size: 35px;
     font-family: $fontGeo;
+    @include h3;
+    padding-top: 1px;
 }
 
 .page2__text {
@@ -178,7 +202,7 @@ body {
 .wrapper__ourFriends {
     width: 100%;
     height: 877px;
-    border: 1px solid green;
+    // border: 1px solid green;
     background-color: #F6F6F6;
 }
 
@@ -203,13 +227,15 @@ body {
     font-size: 35px;
     font-weight: 400;
     font-family: $fontGeo;
-    padding-top: 89px;
+    padding-top: 80px;
     max-width: 400px;
     margin-left: 400px;
     display: flex;
     padding-bottom: 60px;
     text-align: center;
     line-height: 130%;
+    @include h3;
+    letter-spacing: 0.06em;
 }
 
 .ourFriends__arrow {
@@ -244,11 +270,12 @@ body {
     font-family: $fontGeo;
     font-size: 20px;
     text-align: center;
-    color: #545454;
+    color: $color-dark-l;
+    letter-spacing: 0.06em;
 }
 
 .ourFriends__button {
-    margin-top: 30px;
+    margin-top: 33px;
     color: #292929;
     text-align: center;
     border: 2px solid #F1CDB3;
@@ -257,10 +284,11 @@ body {
     vertical-align: middle;
     border-radius: 100px;
     font-size: 17px;
-    padding: 15px 0 15px;
+    padding: 17px 0 15px;
     font-family: $fontGeo;
     max-width: 187px;
     margin-left: 41.5px;
+    letter-spacing: 0.06em;
 }
 
 .ourFriends__animals {
@@ -278,9 +306,13 @@ body {
     }
 }
 
+.ourFriends__animals__bg {
+    padding-bottom: 30px;
+}
+
 .ourFriends__footer {
-    padding: 15px 0 15px 45px;
-    margin-top: 57px;
+    padding: 17px 0 17px 0px;
+    margin-top: 60px;
     border-radius: 100px;
     max-width: 261px;
     font-size: 17px;
@@ -288,8 +320,9 @@ body {
     font-family: $fontGeo;
     color: #292929;
     background-color: #F1CDB3;
-    letter-spacing: 0.05em;
-    margin-left: 470px;
+    letter-spacing: 0.06em;
+    margin-left: 509px;
+    text-align: center;
 }
 
 .HowYouCan {
@@ -297,7 +330,7 @@ body {
 }
 
 .HowYouCan__header {
-    margin-left: 486px;
+    margin-left: 485px;
     padding-bottom: 60px;
     text-align: center;
     line-height: 130%;
@@ -305,14 +338,18 @@ body {
     font-size: 35px;
     font-weight: 400;
     font-family: $fontGeo;
-    padding-top: 71px;
-    max-width: 308px;
+    padding-top: 78px;
+    max-width: 310px;
+    @include h3;
+    letter-spacing: 0.06em;
 }
 
 .HowYouCan__icons__top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 113px;
+    max-width: 1028px;
+    margin-left: 125px;
     div {
         display: flex;
         flex-direction: column;
@@ -329,10 +366,12 @@ body {
     }
 }
 
-.text {
+.HowYouCan__text {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    @include h4;
+    letter-spacing: 0.06em
 }
 
 .HowYouCan__icons {
@@ -343,9 +382,11 @@ body {
 
 .HowYouCan__icons__bot {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 55px;
     height: 113px;
-    padding-top: 55px;
+    max-width: 860px;
+    margin-left: 209px;
     div {
         display: flex;
         flex-direction: column;
@@ -362,10 +403,10 @@ body {
     }
 }
 
-.wrapper__howYouCan {
+.wrapper__youCan {
     max-width: 1280px;
     height: 462px;
-    background-color: #F6F6F6;
+    background-color: $color-light-l;
 }
 
 .howYouCan {
@@ -383,6 +424,8 @@ body {
     max-width: 300px;
     align-items: flex-start;
     margin-bottom: 20px;
+    @include h3;
+    letter-spacing: 0.06em;
 }
 
 .howYouCan {
@@ -390,14 +433,17 @@ body {
 }
 
 .howYouCan__paydog {
-    padding-top: 91px;
-    margin-left: 163px;
+    padding-top: 92px;
+    margin-left: 143px;
 }
 
 .howYouCan__subheader {
     font-size: 15px;
     color: #545454;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
+    @include h5;
+    letter-spacing: 0.06em;
+    margin-left: -1px;
 }
 
 .howYouCan__card {
@@ -405,8 +451,13 @@ body {
     background-color: #F1CDB3;
     max-width: 349px;
     border-radius: 9px;
-    margin: 10px 15px 10px 0;
     font-size: 20px;
+}
+
+.howYouCan__card__num {
+    padding: 11px 0px 10px 0;
+    color: $color-dark-l;
+    letter-spacing: 0.06em;
 }
 
 .howYouCan__cardIcon {
@@ -416,10 +467,11 @@ body {
 .howYouCan__legal {
     margin-top: 20px;
     max-width: 380px;
-    color: #B2B2B2;
+    color: $color-dark-m;
     font-family: $fontArial;
     font-style: italic;
     font-size: 12px;
+    line-height: 150%;
 }
 
 .howYouCan__content {
@@ -435,6 +487,7 @@ body {
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+    height: 350px;
 }
 
 .footer__info {
@@ -457,22 +510,88 @@ body {
             margin-right: 20px;
         }
     }
+    @include h3;
+    letter-spacing: 0.06em;
 }
 
-.footer__left {
-    @include footer_block;
+.footer__left,
+.footer__rigth {
+    padding-top: 56px;
     h3 {
-        max-width: 278px;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 400;
     }
-    margin-right: 160px;
+    div {
+        display: flex;
+        color: $color-primary;
+        @include h4;
+        img {
+            margin-right: 20px;
+        }
+    }
+    @include h3;
+    letter-spacing: 0.06em;
+}
+
+.footer__left__header {
+    width: 285px;
+}
+
+.footer__rigth__header {
+    width: 285px;
 }
 
 .footer__rigth {
-    @include footer_block;
-    h3 {
-        max-width: 270px;
+    margin-left: 155px;
+}
+
+.footer__left__mail>img {
+    padding-top: 42px;
+}
+
+.footer__left__mail>p {
+    padding-top: 44px;
+    @include h4;
+    letter-spacing: 0.06em;
+}
+
+.footer__left__phone>img {
+    padding-top: 44px;
+}
+
+.footer__left__phone>p {
+    padding-top: 48px;
+    @include h4;
+    letter-spacing: 0.06em;
+}
+
+.footer__rigth__gps1 {
+    padding-top: 34px;
+    @include h4;
+    letter-spacing: 0.06em;
+    img {
+        margin-top: -3px;
+        margin-left: -1px;
     }
     p {
-        margin-top: 3px;
+        max-width: 260px;
     }
+}
+
+.footer__rigth__gps2 {
+    padding-top: 31px;
+    p {
+        padding-top: 5px;
+    }
+    img {
+        margin-top: 1px;
+        margin-left: -1px;
+    }
+    @include h4;
+    letter-spacing: 0.06em;
+}
+
+.footer__img {
+    margin-top: 40px;
 }

@@ -1,0 +1,109 @@
+$fontGeo: 'Georgia',
+sans-serif;
+$fontArial: Arial,
+"Helvetica Neue",
+Helvetica,
+sans-serif;
+$color-light-xl: #fff;
+$color-light-l: #F6F6F6;
+$color-light-s: #FAFAFA;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+@mixin start-screen-gradient-background {
+    background: rgb(91, 72, 58);
+    background: radial-gradient(circle, rgba(91, 72, 58, 1) 0%, rgba(38, 36, 37, 1) 100%);
+}
+
+@mixin footer-gradient-background {
+    background: rgb(81, 61, 47);
+    background: radial-gradient(circle, rgba(81, 61, 47, 1) 0%, rgba(26, 26, 28, 1) 100%);
+}
+
+@mixin h2 {
+    font-family: $fontGeo;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+@mixin h3 {
+    font-family: $fontGeo;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 6%;
+}
+
+@mixin h3-mobile {
+    font-family: $fontGeo;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 6%;
+}
+
+@mixin h4 {
+    font-family: $fontGeo;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 6%;
+    font-size: 20px;
+}
+
+@mixin h5 {
+    font-family: $fontGeo;
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 15px;
+    letter-spacing: 6%;
+}
+
+@mixin h5-modal-window {
+    font-family: $fontGeo;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 6%;
+}
+
+@mixin paragraph-l {
+    font-family: $fontArial;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+@mixin paragraph-s {
+    font-family: $fontArial;
+    font-style: italic;
+    line-height: 150%;
+    font-size: 12px;
+}
+
+@mixin paragraph-mobile-menu {
+    font-family: $fontArial;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 32px;
+}
+
+@mixin logo_title {
+    font-family: $fontGeo;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 6%;
+    font-size: 32px;
+}
+
+@mixin logo_subtitle {
+    font-family: $fontArial;
+    font-weight: 400;
+    letter-spacing: 10%;
+    font-size: 13px;
+}
