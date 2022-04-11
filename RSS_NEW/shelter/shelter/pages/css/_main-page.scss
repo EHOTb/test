@@ -595,3 +595,36 @@ body {
 .footer__img {
     margin-top: 40px;
 }
+
+//========================= PETS==============================================================================//
+.pets__wrapper_global {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.pets__header {
+    max-width: 1200px;
+    max-height: 120px;
+    background-color: #fff;
+    .nav>li>a {
+        color: $color-dark-l;
+    }
+}
+
+.cozy__pets {
+    color: $color-dark-l;
+}
+
+.sfp__pets {
+    color: $color-dark-3xl;
+}
+
+.pets {
+    background-color: $color-light-l;
+    width: 1280px;
+    height: 1342px;
+}
+
+.wrapper__pet {
+    min-width: 1200px;
+}
